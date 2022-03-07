@@ -21,10 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prestart": "npm run setup-server && npm run setup-cleanup",
-    "setup-server": "node ./scripts/setup-server.js",
-    "setup-env": "node ./scripts/setup-env.js",
-    "setup-cleanup": "node ./scripts/clean-up.js",
     "start-server": "node ./scripts/start-server.js",
     "allocate-port": "node ./scripts/port-allocator.mjs"
   },
