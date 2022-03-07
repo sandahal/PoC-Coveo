@@ -16,6 +16,9 @@ const SearchBoxRenderer: FunctionComponent<SearchBoxProps> = (props) => {
   const {controller} = props;
   const [state, setState] = useState(controller.state);
 
+  console.log("controller", controller);
+  console.log("state value", state);
+
   useEffect(
     () => controller.subscribe(() => setState(controller.state)),
     [controller]

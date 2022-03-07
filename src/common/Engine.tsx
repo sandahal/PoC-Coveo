@@ -1,4 +1,4 @@
-import {buildSearchEngine} from '@coveo/headless';
+import {buildSearchEngine, getSampleSearchEngineConfiguration} from '@coveo/headless';
 
 const getEndpointToLocalServer = () => {
   if (!process.env.REACT_APP_SERVER_PORT) {
@@ -18,6 +18,12 @@ export async function getSearchToken() {
   const {token} = await res.json();
   return token;
 }
+
+// export async function initializeHeadlessEngine() {
+//   return buildSearchEngine({
+//     configuration: getSampleSearchEngineConfiguration()
+//   })
+// }
 
 export async function initializeHeadlessEngine() {
   return buildSearchEngine({
